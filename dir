@@ -1,0 +1,191 @@
+.
+├── 0-setup_web_static.sh
+├── 1-pack_web_static.py
+├── 2-do_deploy_web_static.py
+├── 3-deploy_web_static.py
+├── api
+│   ├── __init__.py
+│   └── v1
+│       ├── app.py
+│       ├── __init__.py
+│       └── views
+│           ├── amenities.py
+│           ├── cities.py
+│           ├── documentation
+│           │   ├── amenity
+│           │   │   ├── all_amenities.yml
+│           │   │   ├── delete_amenity.yml
+│           │   │   ├── get_amenity.yml
+│           │   │   ├── post_amenity.yml
+│           │   │   └── put_amenity.yml
+│           │   ├── city
+│           │   │   ├── cities_by_state.yml
+│           │   │   ├── delete_city.yml
+│           │   │   ├── get_city.yml
+│           │   │   ├── post_city.yml
+│           │   │   └── put_city.yml
+│           │   ├── place
+│           │   │   ├── delete_place.yml
+│           │   │   ├── get_places.yml
+│           │   │   ├── get_place.yml
+│           │   │   ├── post_place.yml
+│           │   │   ├── post_search.yml
+│           │   │   └── put_place.yml
+│           │   ├── place_amenity
+│           │   │   ├── delete_place_amenities.yml
+│           │   │   ├── get_places_amenities.yml
+│           │   │   └── post_place_amenities.yml
+│           │   ├── reviews
+│           │   │   ├── delete_reviews.yml
+│           │   │   ├── get_reviews.yml
+│           │   │   ├── get_review.yml
+│           │   │   ├── post_reviews.yml
+│           │   │   └── put_reviews.yml
+│           │   ├── state
+│           │   │   ├── delete_state.yml
+│           │   │   ├── get_id_state.yml
+│           │   │   ├── get_state.yml
+│           │   │   ├── post_state.yml
+│           │   │   └── put_state.yml
+│           │   └── user
+│           │       ├── all_users.yml
+│           │       ├── delete_user.yml
+│           │       ├── get_user.yml
+│           │       ├── post_user.yml
+│           │       └── put_user.yml
+│           ├── index.py
+│           ├── __init__.py
+│           ├── places_amenities.py
+│           ├── places.py
+│           ├── places_reviews.py
+│           ├── states.py
+│           └── users.py
+├── AUTHORS
+├── code_review.txt
+├── console.py
+├── dir
+├── models
+│   ├── amenity.py
+│   ├── base_model.py
+│   ├── city.py
+│   ├── engine
+│   │   ├── db_storage.py
+│   │   ├── file_storage.py
+│   │   └── __init__.py
+│   ├── __init__.py
+│   ├── place.py
+│   ├── review.py
+│   ├── state.py
+│   └── user.py
+├── README.md
+├── setup_mysql_dev.sql
+├── setup_mysql_test.sql
+├── tests
+│   ├── __init__.py
+│   ├── test_console.py
+│   └── test_models
+│       ├── __init__.py
+│       ├── test_amenity.py
+│       ├── test_base_model.py
+│       ├── test_city.py
+│       ├── test_engine
+│       │   ├── __init__.py
+│       │   ├── test_db_storage.py
+│       │   └── test_file_storage.py
+│       ├── test_place.py
+│       ├── test_review.py
+│       ├── test_state.py
+│       └── test_user.py
+├── web_flask
+│   ├── 0-hello_route.py
+│   ├── 100-dump.sql
+│   ├── 100-hbnb.py
+│   ├── 10-hbnb_filters.py
+│   ├── 1-hbnb_route.py
+│   ├── 2-c_route.py
+│   ├── 3-python_route.py
+│   ├── 4-number_route.py
+│   ├── 5-number_template.py
+│   ├── 6-number_odd_or_even.py
+│   ├── 7-states_list.py
+│   ├── 8-cities_by_states.py
+│   ├── 9-states.py
+│   ├── __init__.py
+│   ├── README.md
+│   ├── static
+│   │   ├── images
+│   │   │   ├── icon_bath.png
+│   │   │   ├── icon_bed.png
+│   │   │   ├── icon_group.png
+│   │   │   ├── icon.png
+│   │   │   └── logo.png
+│   │   └── styles
+│   │       ├── 3-footer.css
+│   │       ├── 3-header.css
+│   │       ├── 4-common.css
+│   │       ├── 6-filters.css
+│   │       ├── 8-places.css
+│   │       └── w3c_validator.py
+│   └── templates
+│       ├── 100-hbnb.html
+│       ├── 100-hbnb.html~
+│       ├── 10-hbnb_filters.html
+│       ├── 5-number.html
+│       ├── 6-number_odd_or_even.html
+│       ├── 7-states_list.html
+│       ├── 8-cities_by_states.html
+│       ├── 9-states.html
+│       └── w3c_validator.py
+└── web_static
+    ├── 0-index.html
+    ├── 100-index.html
+    ├── 101-index.html
+    ├── 102-index.html
+    ├── 103-index.html
+    ├── 1-index.html
+    ├── 2-index.html
+    ├── 3-index.html
+    ├── 4-index.html
+    ├── 5-index.html
+    ├── 6-index.html
+    ├── 7-index.html
+    ├── 8-index.html
+    ├── images
+    │   ├── icon_bath.png
+    │   ├── icon_bed.png
+    │   ├── icon_group.png
+    │   ├── icon_pets.png
+    │   ├── icon.png
+    │   ├── icon_tv.png
+    │   ├── icon_wifi.png
+    │   └── logo.png
+    ├── README.md
+    ├── styles
+    │   ├── 100-places.css
+    │   ├── 101-places.css
+    │   ├── 102-common.css
+    │   ├── 102-filters.css
+    │   ├── 102-footer.css
+    │   ├── 102-header.css
+    │   ├── 102-places.css
+    │   ├── 102-places.css~
+    │   ├── 103-common.css
+    │   ├── 103-filters.css
+    │   ├── 103-footer.css
+    │   ├── 103-header.css
+    │   ├── 103-places.css
+    │   ├── 2-common.css
+    │   ├── 2-footer.css
+    │   ├── 2-header.css
+    │   ├── 3-common.css
+    │   ├── 3-footer.css
+    │   ├── 3-header.css
+    │   ├── 4-common.css
+    │   ├── 4-filters.css
+    │   ├── 5-filters.css
+    │   ├── 6-filters.css
+    │   ├── 7-places.css
+    │   └── 8-places.css
+    └── w3c_validator.py
+
+25 directories, 164 files
